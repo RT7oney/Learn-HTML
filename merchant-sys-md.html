@@ -1,0 +1,131 @@
+<li {#if isset($smarty.get.do) and $smarty.get.do eq 'coin'#}class="active" {#/if#}>
+    <a href="#" class="auto">
+        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+        <i class="i i-stack icon">
+                        </i>
+        <span class="font-bold">账户管理</span>
+    </a>
+    <ul class="nav dk">
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'create'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=coin&cmd=create" class="auto">
+                <i class="i i-dot"></i>
+                <span>生成小金二维码</span>
+            </a>
+        </li>
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'qrlogs'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=coin&cmd=qrlogs" class="auto">
+                <i class="i i-dot"></i>
+                <span>小金二维码管理</span>
+            </a>
+        </li>
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'outlogs'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=coin&cmd=outlogs" class="auto">
+                <i class="i i-dot"></i>
+                <span>账户支出记录</span>
+            </a>
+        </li>
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'ratio'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=coin&cmd=ratio" class="auto">
+                <i class="i i-dot"></i>
+                <span>返金比例</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li {#if isset($smarty.get.do) and $smarty.get.do eq 'customer'#}class="active" {#/if#}>
+    <a href="#" class="auto">
+        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+        <i class="i i-stack icon">
+                        </i>
+        <span class="font-bold">商户详情</span>
+    </a>
+    <ul class="nav dk">
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'all'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=customer&cmd=all" class="auto">
+                <i class="i i-dot"></i>
+                <span>客户列表</span>
+            </a>
+        </li>
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'pos'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=customer&cmd=pos" class="auto">
+                <i class="i i-dot"></i>
+                <span>POS机列表</span>
+            </a>
+        </li>
+        <!-- <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'activity'#}style="background-color:#f9bc28"{#/if#}>
+                          <a href="./index.php?do=customer&cmd=activity" class="auto">
+                            <i class="i i-dot"></i>
+                            <span>活动列表</span>
+                          </a>
+                        </li> -->
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'point'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=customer&cmd=point" class="auto">
+                <i class="i i-dot"></i>
+                <span>积分兑换</span>
+            </a>
+        </li>
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'pointqr'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=customer&cmd=pointqr" class="auto">
+                <i class="i i-dot"></i>
+                <span>加入积分计划</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li {#if isset($smarty.get.do) and $smarty.get.do eq 'statistics'#}class="active" {#/if#}>
+    <a href="#" class="auto">
+        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+        <i class="i i-stack icon">
+                        </i>
+        <span class="font-bold">数据统计</span>
+    </a>
+    <ul class="nav dk">
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'coin'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=statistics&cmd=coin" class="auto">
+                <i class="i i-dot"></i>
+                <span>小金支出</span>
+            </a>
+        </li>
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'user'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=statistics&cmd=user" class="auto">
+                <i class="i i-dot"></i>
+                <span>用户数量</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li {#if isset($smarty.get.do) and $smarty.get.do eq 'activity'#}class="active" {#/if#}>
+    <a href="#" class="auto">
+        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+        <i class="i i-stack icon">
+                        </i>
+        <span class="font-bold">活动管理</span>
+    </a>
+    <ul class="nav dk">
+        <li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'index'#}style="background-color:#f9bc28" {#/if#}>
+            <a href="./index.php?do=activity&cmd=index" class="auto">
+                <i class="i i-dot"></i>
+                <span>活动列表</span>
+            </a>
+        </li>
+    </ul>
+</li>
+<li {#if isset($smarty.get.cmd) and $smarty.get.cmd eq 'setinfo'#}class="active" {#/if#}>
+    <a href="./index.php?do=index&cmd=setinfo" class="auto">
+        <i class="i i-stack2 icon">
+                        </i>
+        <span class="font-bold">资料设置</span>
+    </a>
+</li>

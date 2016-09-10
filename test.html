@@ -1,0 +1,1413 @@
+<!-- <div id="right_'+l1+'_'+l2+'" class="js_Right editor_inner" style="background-color:#fff;">
+    <div class="global_mod float_layout menu_form_hd js_second_title_bar">
+        <h4 class="global_info">菜单名称</h4>
+        <div class="global_extra">
+            <a href="javascript:void(0);" id="jsDelBt" class="btn btn-primary btn-rounded">删除菜单</a>
+        </div>
+    </div>
+    <div class="menu_form_bd" id="view" style="">
+        <div class="frm_control_group js_setNameBox">
+            <label for="" class="frm_label">
+                <strong class="title js_menuTitle">菜单名称</strong>
+            </label>
+            <div class="frm_controls">
+                <span class="frm_input_box with_counter counter_in append">
+                    <input type="text" class="frm_input js_menu_name">
+                </span>
+                <p class="frm_tips js_titleNolTips">字数不超过4个汉字或8个字母</p>
+            </div>
+        </div>
+        <div class="frm_control_group" style="`+sty+`">
+            <label for="" class="frm_label">
+                <strong class="title js_menuContent">菜单内容</strong>
+            </label>
+        </div>
+        <div class="menu_content_container" style="">
+            <div class="menu_content url jsMain" id="url" style="">
+                <form action="" id="urlForm" onsubmit="return false;">
+                    <p class="menu_content_tips tips_global" style="padding-top:2%;">用户点击该子菜单会跳到以下链接</p>
+                    <div class="frm_control_group" style="padding-top:5%;padding-left:5%;">
+                        <label for="" class="frm_label">页面地址</label>
+                        <div class="frm_controls">
+                            <span class="frm_input_box">                                                    
+                                <input type="text" class="frm_input" id="urlText" name="urlText">                                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="frm_control_group btn_appmsg_wrap">
+                        <div class="frm_controls" style="padding-top:5%;padding-left:5%;">
+                            <a href="javascript:;" id="js_appmsgPop" class="btn btn-primary btn-rounded">从公众号图文消息中选择</a>
+                            <a href="javascript:void(0);" class="dn btn btn_default" id="js_reChangeAppmsg" style="display: none;">重新选择</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile_preview" id="mobileDiv" style="display: block;">
+    <div class="mobile_preview_hd"> <strong class="nickname">德浓小确幸</strong> </div>
+    <div class="mobile_preview_bd">
+        <ul id="viewShow" class="show_list"> </ul>
+    </div>
+    <div class="mobile_preview_ft">
+        <ul class="pre_menu_list grid_line" id="viewList">
+            <li class="pre_menu_item grid_item size1of1 jsViewLi no_extra_flex" id="menu_0">
+                <a href="javascript:void(0);" class="jsView pre_menu_link" title="xiaoque" draggable="false">
+                    <i class="icon_menu_dot"></i> xiaoque
+                </a>
+                <div class="sub_pre_menu_box jsSubViewDiv" style="display:none">
+                    <ul class="sub_pre_menu_list">
+                        <li id="subMenu_menu_0_0"><a href="javascript:void(0);" class="jsSubView" title="啦啦啦" draggable="false">啦啦啦</a></li>
+                        <li id="subMenu_menu_0_1"><a href="javascript:void(0);" class="jsSubView" title="中国人都" draggable="false">中国人都</a></li>
+                        <li id="subMenu_menu_0_2"><a href="javascript:void(0);" class="jsSubView" title="阿拉拉了" draggable="false">阿拉拉了</a></li>
+                    </ul>
+                    <i class="arrow arrow_out"></i>
+                    <i class="arrow arrow_in"></i>
+                </div>
+            </li>
+        </ul>
+    </div> <a href="javascript:void(0);" class="mobile_preview_closed btn btn_default" id="viewClose">退出预览</a>
+</div>
+ -->
+
+
+
+
+ <!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta name="robots" content="noindex,nofollow" />
+        <style>
+            /* Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html */
+            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+            html { background: #eee; padding: 10px }
+            img { border: 0; }
+            #sf-resetcontent { width:970px; margin:0 auto; }
+                        .sf-reset { font: 11px Verdana, Arial, sans-serif; color: #333 }
+            .sf-reset .clear { clear:both; height:0; font-size:0; line-height:0; }
+            .sf-reset .clear_fix:after { display:block; height:0; clear:both; visibility:hidden; }
+            .sf-reset .clear_fix { display:inline-block; }
+            .sf-reset * html .clear_fix { height:1%; }
+            .sf-reset .clear_fix { display:block; }
+            .sf-reset, .sf-reset .block { margin: auto }
+            .sf-reset abbr { border-bottom: 1px dotted #000; cursor: help; }
+            .sf-reset p { font-size:14px; line-height:20px; color:#868686; padding-bottom:20px }
+            .sf-reset strong { font-weight:bold; }
+            .sf-reset a { color:#6c6159; cursor: default; }
+            .sf-reset a img { border:none; }
+            .sf-reset a:hover { text-decoration:underline; }
+            .sf-reset em { font-style:italic; }
+            .sf-reset h1, .sf-reset h2 { font: 20px Georgia, "Times New Roman", Times, serif }
+            .sf-reset .exception_counter { background-color: #fff; color: #333; padding: 6px; float: left; margin-right: 10px; float: left; display: block; }
+            .sf-reset .exception_title { margin-left: 3em; margin-bottom: 0.7em; display: block; }
+            .sf-reset .exception_message { margin-left: 3em; display: block; }
+            .sf-reset .traces li { font-size:12px; padding: 2px 4px; list-style-type:decimal; margin-left:20px; }
+            .sf-reset .block { background-color:#FFFFFF; padding:10px 28px; margin-bottom:20px;
+                -webkit-border-bottom-right-radius: 16px;
+                -webkit-border-bottom-left-radius: 16px;
+                -moz-border-radius-bottomright: 16px;
+                -moz-border-radius-bottomleft: 16px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 16px;
+                border-bottom:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+            }
+            .sf-reset .block_exception { background-color:#ddd; color: #333; padding:20px;
+                -webkit-border-top-left-radius: 16px;
+                -webkit-border-top-right-radius: 16px;
+                -moz-border-radius-topleft: 16px;
+                -moz-border-radius-topright: 16px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+                border-top:1px solid #ccc;
+                border-right:1px solid #ccc;
+                border-left:1px solid #ccc;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            .sf-reset a { background:none; color:#868686; text-decoration:none; }
+            .sf-reset a:hover { background:none; color:#313131; text-decoration:underline; }
+            .sf-reset ol { padding: 10px 0; }
+            .sf-reset h1 { background-color:#FFFFFF; padding: 15px 28px; margin-bottom: 20px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sf-resetcontent" class="sf-reset">
+            <h1>Whoops, looks like something went wrong.</h1>
+            <h2 class="block_exception clear_fix">
+                <span class="exception_counter">1/1</span>
+                <span class="exception_title">
+                    <abbr title="Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException">MethodNotAllowedHttpException</abbr> in
+                    <a title="/alidata/www/food2send/API/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php line 453" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RoutesRequests.php line 453</a>:
+                </span>
+                <span class="exception_message"></span>
+            </h2>
+            <div class="block">
+                <ol class="traces list_exception">
+                    <li> in 
+                        <a title="/alidata/www/food2send/API/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php line 453" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RoutesRequests.php line 453</a>
+                    </li>
+                    <li>at 
+                        <abbr title="Laravel\Lumen\Application">Application</abbr>->handleDispatcherResponse(
+                        <em>array</em>('2',
+                        <em>array</em>('GET'))) in
+                        <a title="/alidata/www/food2send/API/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php line 388" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RoutesRequests.php line 388</a>
+                    </li>
+                    <li>at 
+                        <abbr title="Laravel\Lumen\Application">Application</abbr>->Laravel\Lumen\Concerns\{closure}() in
+                        <a title="/alidata/www/food2send/API/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php line 636" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RoutesRequests.php line 636</a>
+                    </li>
+                    <li>at 
+                        <abbr title="Laravel\Lumen\Application">Application</abbr>->sendThroughPipeline(
+                        <em>array</em>(),
+                        <em>object</em>(
+                        <abbr title="Closure">Closure</abbr>)) in
+                        <a title="/alidata/www/food2send/API/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php line 389" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RoutesRequests.php line 389</a>
+                    </li>
+                    <li>at 
+                        <abbr title="Laravel\Lumen\Application">Application</abbr>->dispatch(
+                        <em>object</em>(
+                        <abbr title="Illuminate\Http\Request">Request</abbr>)) in
+                        <a title="/alidata/www/food2send/API/vendor/laravel/lumen-framework/src/Concerns/RoutesRequests.php line 334" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">RoutesRequests.php line 334</a>
+                    </li>
+                    <li>at 
+                        <abbr title="Laravel\Lumen\Application">Application</abbr>->run(
+                        <em>object</em>(
+                        <abbr title="Illuminate\Http\Request">Request</abbr>)) in
+                        <a title="/alidata/www/food2send/API/public/index.php line 29" ondblclick="var f=this.innerHTML;this.innerHTML=this.title;this.title=f;">index.php line 29</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{
+    _readableState: ReadableState{
+        objectMode: false,
+        highWaterMark: 16384,
+        buffer: [
+            
+        ],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: true,
+        endEmitted: true,
+        reading: false,
+        sync: true,
+        needReadable: false,
+        emittedReadable: false,
+        readableListening: false,
+        resumeScheduled: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null
+    },
+    readable: false,
+    domain: null,
+    _events: {
+        end: [
+            [
+                Function: responseOnEnd
+            ],
+            [
+                Function
+            ],
+            [
+                Function
+            ],
+            [
+                Function
+            ]
+        ],
+        close: [
+            [
+                Function
+            ],
+            [
+                Function
+            ]
+        ],
+        data: [
+            Function
+        ],
+        error: [
+            Function
+        ]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    socket: TLSSocket{
+        _tlsOptions: {
+            pipe: null,
+            secureContext: [
+                Object
+            ],
+            isServer: false,
+            requestCert: true,
+            rejectUnauthorized: true,
+            session: undefined,
+            NPNProtocols: undefined,
+            requestOCSP: undefined
+        },
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: {
+            close: [
+                Object
+            ],
+            end: [
+                Object
+            ],
+            finish: [
+                Function: onSocketFinish
+            ],
+            _socketEnd: [
+                Function: onSocketEnd
+            ],
+            secure: [
+                Function
+            ],
+            free: [
+                Function: onFree
+            ],
+            agentRemove: [
+                Function: onRemove
+            ],
+            drain: [
+                Function: ondrain
+            ],
+            error: [
+                Function: socketErrorListener
+            ]
+        },
+        _eventsCount: 9,
+        _connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.weixin.qq.com',
+        _readableState: ReadableState{
+            objectMode: false,
+            highWaterMark: 16384,
+            buffer: [
+                
+            ],
+            length: 0,
+            pipes: null,
+            pipesCount: 0,
+            flowing: true,
+            ended: false,
+            endEmitted: false,
+            reading: true,
+            sync: false,
+            needReadable: true,
+            emittedReadable: false,
+            readableListening: false,
+            resumeScheduled: false,
+            defaultEncoding: 'utf8',
+            ranOut: false,
+            awaitDrain: 0,
+            readingMore: false,
+            decoder: null,
+            encoding: null
+        },
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: WritableState{
+            objectMode: false,
+            highWaterMark: 16384,
+            needDrain: false,
+            ending: true,
+            ended: true,
+            finished: true,
+            decodeStrings: false,
+            defaultEncoding: 'utf8',
+            length: 0,
+            writing: false,
+            corked: 0,
+            sync: false,
+            bufferProcessing: false,
+            onwrite: [
+                Function
+            ],
+            writecb: null,
+            writelen: 0,
+            bufferedRequest: null,
+            lastBufferedRequest: null,
+            pendingcb: 0,
+            prefinished: true,
+            errorEmitted: false,
+            bufferedRequestCount: 0,
+            corkedRequestsFree: [
+                Object
+            ]
+        },
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        bytesRead: 298,
+        _bytesDispatched: 195,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: ClientRequest{
+            domain: null,
+            _events: [
+                Object
+            ],
+            _eventsCount: 4,
+            _maxListeners: undefined,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            outputCallbacks: [
+                
+            ],
+            outputSize: 0,
+            writable: true,
+            _last: true,
+            chunkedEncoding: false,
+            shouldKeepAlive: false,
+            useChunkedEncodingByDefault: false,
+            sendDate: false,
+            _removedHeader: {
+                
+            },
+            _contentLength: 0,
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _headerSent: true,
+            socket: [
+                Circular
+            ],
+            connection: [
+                Circular
+            ],
+            _header: 'GET/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3HTTP/1.1\r\nhost: api.weixin.qq.com\r\naccept: application/json\r\nConnection: close\r\n\r\n',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            _onPendingData: null,
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'GET',
+            path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        read: [
+            Function
+        ],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1
+    },
+    connection: TLSSocket{
+        _tlsOptions: {
+            pipe: null,
+            secureContext: [
+                Object
+            ],
+            isServer: false,
+            requestCert: true,
+            rejectUnauthorized: true,
+            session: undefined,
+            NPNProtocols: undefined,
+            requestOCSP: undefined
+        },
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: {
+            close: [
+                Object
+            ],
+            end: [
+                Object
+            ],
+            finish: [
+                Function: onSocketFinish
+            ],
+            _socketEnd: [
+                Function: onSocketEnd
+            ],
+            secure: [
+                Function
+            ],
+            free: [
+                Function: onFree
+            ],
+            agentRemove: [
+                Function: onRemove
+            ],
+            drain: [
+                Function: ondrain
+            ],
+            error: [
+                Function: socketErrorListener
+            ]
+        },
+        _eventsCount: 9,
+        _connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.weixin.qq.com',
+        _readableState: ReadableState{
+            objectMode: false,
+            highWaterMark: 16384,
+            buffer: [
+                
+            ],
+            length: 0,
+            pipes: null,
+            pipesCount: 0,
+            flowing: true,
+            ended: false,
+            endEmitted: false,
+            reading: true,
+            sync: false,
+            needReadable: true,
+            emittedReadable: false,
+            readableListening: false,
+            resumeScheduled: false,
+            defaultEncoding: 'utf8',
+            ranOut: false,
+            awaitDrain: 0,
+            readingMore: false,
+            decoder: null,
+            encoding: null
+        },
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: WritableState{
+            objectMode: false,
+            highWaterMark: 16384,
+            needDrain: false,
+            ending: true,
+            ended: true,
+            finished: true,
+            decodeStrings: false,
+            defaultEncoding: 'utf8',
+            length: 0,
+            writing: false,
+            corked: 0,
+            sync: false,
+            bufferProcessing: false,
+            onwrite: [
+                Function
+            ],
+            writecb: null,
+            writelen: 0,
+            bufferedRequest: null,
+            lastBufferedRequest: null,
+            pendingcb: 0,
+            prefinished: true,
+            errorEmitted: false,
+            bufferedRequestCount: 0,
+            corkedRequestsFree: [
+                Object
+            ]
+        },
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        bytesRead: 298,
+        _bytesDispatched: 195,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: ClientRequest{
+            domain: null,
+            _events: [
+                Object
+            ],
+            _eventsCount: 4,
+            _maxListeners: undefined,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            outputCallbacks: [
+                
+            ],
+            outputSize: 0,
+            writable: true,
+            _last: true,
+            chunkedEncoding: false,
+            shouldKeepAlive: false,
+            useChunkedEncodingByDefault: false,
+            sendDate: false,
+            _removedHeader: {
+                
+            },
+            _contentLength: 0,
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _headerSent: true,
+            socket: [
+                Circular
+            ],
+            connection: [
+                Circular
+            ],
+            _header: 'GET/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3HTTP/1.1\r\nhost: api.weixin.qq.com\r\naccept: application/json\r\nConnection: close\r\n\r\n',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            _onPendingData: null,
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'GET',
+            path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        read: [
+            Function
+        ],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1
+    },
+    httpVersionMajor: 1,
+    httpVersionMinor: 1,
+    httpVersion: '1.1',
+    complete: true,
+    headers: {
+        connection: 'close',
+        'content-type': 'application/json;encoding=utf-8',
+        date: 'Fri,
+        26Aug201606: 33: 20GMT',
+        'content-length': '154'
+    },
+    rawHeaders: [
+        'Connection',
+        'close',
+        'Content-Type',
+        'application/json;encoding=utf-8',
+        'Date',
+        'Fri,
+        26Aug201606: 33: 20GMT',
+        'Content-Length',
+        '154'
+    ],
+    trailers: {
+        
+    },
+    rawTrailers: [
+        
+    ],
+    upgrade: false,
+    url: '',
+    method: null,
+    statusCode: 200,
+    statusMessage: 'OK',
+    client: TLSSocket{
+        _tlsOptions: {
+            pipe: null,
+            secureContext: [
+                Object
+            ],
+            isServer: false,
+            requestCert: true,
+            rejectUnauthorized: true,
+            session: undefined,
+            NPNProtocols: undefined,
+            requestOCSP: undefined
+        },
+        _secureEstablished: true,
+        _securePending: false,
+        _newSessionPending: false,
+        _controlReleased: true,
+        _SNICallback: null,
+        servername: null,
+        npnProtocol: undefined,
+        authorized: true,
+        authorizationError: null,
+        encrypted: true,
+        _events: {
+            close: [
+                Object
+            ],
+            end: [
+                Object
+            ],
+            finish: [
+                Function: onSocketFinish
+            ],
+            _socketEnd: [
+                Function: onSocketEnd
+            ],
+            secure: [
+                Function
+            ],
+            free: [
+                Function: onFree
+            ],
+            agentRemove: [
+                Function: onRemove
+            ],
+            drain: [
+                Function: ondrain
+            ],
+            error: [
+                Function: socketErrorListener
+            ]
+        },
+        _eventsCount: 9,
+        _connecting: false,
+        _hadError: false,
+        _handle: null,
+        _parent: null,
+        _host: 'api.weixin.qq.com',
+        _readableState: ReadableState{
+            objectMode: false,
+            highWaterMark: 16384,
+            buffer: [
+                
+            ],
+            length: 0,
+            pipes: null,
+            pipesCount: 0,
+            flowing: true,
+            ended: false,
+            endEmitted: false,
+            reading: true,
+            sync: false,
+            needReadable: true,
+            emittedReadable: false,
+            readableListening: false,
+            resumeScheduled: false,
+            defaultEncoding: 'utf8',
+            ranOut: false,
+            awaitDrain: 0,
+            readingMore: false,
+            decoder: null,
+            encoding: null
+        },
+        readable: false,
+        domain: null,
+        _maxListeners: undefined,
+        _writableState: WritableState{
+            objectMode: false,
+            highWaterMark: 16384,
+            needDrain: false,
+            ending: true,
+            ended: true,
+            finished: true,
+            decodeStrings: false,
+            defaultEncoding: 'utf8',
+            length: 0,
+            writing: false,
+            corked: 0,
+            sync: false,
+            bufferProcessing: false,
+            onwrite: [
+                Function
+            ],
+            writecb: null,
+            writelen: 0,
+            bufferedRequest: null,
+            lastBufferedRequest: null,
+            pendingcb: 0,
+            prefinished: true,
+            errorEmitted: false,
+            bufferedRequestCount: 0,
+            corkedRequestsFree: [
+                Object
+            ]
+        },
+        writable: false,
+        allowHalfOpen: false,
+        destroyed: true,
+        bytesRead: 298,
+        _bytesDispatched: 195,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: undefined,
+        _server: null,
+        ssl: null,
+        _requestCert: true,
+        _rejectUnauthorized: true,
+        parser: null,
+        _httpMessage: ClientRequest{
+            domain: null,
+            _events: [
+                Object
+            ],
+            _eventsCount: 4,
+            _maxListeners: undefined,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            outputCallbacks: [
+                
+            ],
+            outputSize: 0,
+            writable: true,
+            _last: true,
+            chunkedEncoding: false,
+            shouldKeepAlive: false,
+            useChunkedEncodingByDefault: false,
+            sendDate: false,
+            _removedHeader: {
+                
+            },
+            _contentLength: 0,
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _headerSent: true,
+            socket: [
+                Circular
+            ],
+            connection: [
+                Circular
+            ],
+            _header: 'GET/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3HTTP/1.1\r\nhost: api.weixin.qq.com\r\naccept: application/json\r\nConnection: close\r\n\r\n',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            _onPendingData: null,
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'GET',
+            path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        read: [
+            Function
+        ],
+        _consuming: true,
+        _idleNext: null,
+        _idlePrev: null,
+        _idleTimeout: -1
+    },
+    _consuming: true,
+    _dumped: false,
+    req: ClientRequest{
+        domain: null,
+        _events: {
+            socket: [
+                Object
+            ],
+            response: [
+                Function: bound
+            ],
+            error: [
+                Function: bound
+            ],
+            drain: [
+                Function
+            ]
+        },
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        output: [
+            
+        ],
+        outputEncodings: [
+            
+        ],
+        outputCallbacks: [
+            
+        ],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedHeader: {
+            
+        },
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: TLSSocket{
+            _tlsOptions: [
+                Object
+            ],
+            _secureEstablished: true,
+            _securePending: false,
+            _newSessionPending: false,
+            _controlReleased: true,
+            _SNICallback: null,
+            servername: null,
+            npnProtocol: undefined,
+            authorized: true,
+            authorizationError: null,
+            encrypted: true,
+            _events: [
+                Object
+            ],
+            _eventsCount: 9,
+            _connecting: false,
+            _hadError: false,
+            _handle: null,
+            _parent: null,
+            _host: 'api.weixin.qq.com',
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _maxListeners: undefined,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: false,
+            destroyed: true,
+            bytesRead: 298,
+            _bytesDispatched: 195,
+            _sockname: null,
+            _pendingData: null,
+            _pendingEncoding: '',
+            server: undefined,
+            _server: null,
+            ssl: null,
+            _requestCert: true,
+            _rejectUnauthorized: true,
+            parser: null,
+            _httpMessage: [
+                Circular
+            ],
+            read: [
+                Function
+            ],
+            _consuming: true,
+            _idleNext: null,
+            _idlePrev: null,
+            _idleTimeout: -1
+        },
+        connection: TLSSocket{
+            _tlsOptions: [
+                Object
+            ],
+            _secureEstablished: true,
+            _securePending: false,
+            _newSessionPending: false,
+            _controlReleased: true,
+            _SNICallback: null,
+            servername: null,
+            npnProtocol: undefined,
+            authorized: true,
+            authorizationError: null,
+            encrypted: true,
+            _events: [
+                Object
+            ],
+            _eventsCount: 9,
+            _connecting: false,
+            _hadError: false,
+            _handle: null,
+            _parent: null,
+            _host: 'api.weixin.qq.com',
+            _readableState: [
+                Object
+            ],
+            readable: false,
+            domain: null,
+            _maxListeners: undefined,
+            _writableState: [
+                Object
+            ],
+            writable: false,
+            allowHalfOpen: false,
+            destroyed: true,
+            bytesRead: 298,
+            _bytesDispatched: 195,
+            _sockname: null,
+            _pendingData: null,
+            _pendingEncoding: '',
+            server: undefined,
+            _server: null,
+            ssl: null,
+            _requestCert: true,
+            _rejectUnauthorized: true,
+            parser: null,
+            _httpMessage: [
+                Circular
+            ],
+            read: [
+                Function
+            ],
+            _consuming: true,
+            _idleNext: null,
+            _idlePrev: null,
+            _idleTimeout: -1
+        },
+        _header: 'GET/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3HTTP/1.1\r\nhost: api.weixin.qq.com\r\naccept: application/json\r\nConnection: close\r\n\r\n',
+        _headers: {
+            host: 'api.weixin.qq.com',
+            accept: 'application/json'
+        },
+        _headerNames: {
+            host: 'host',
+            accept: 'accept'
+        },
+        _onPendingData: null,
+        agent: Agent{
+            domain: null,
+            _events: [
+                Object
+            ],
+            _eventsCount: 1,
+            _maxListeners: undefined,
+            defaultPort: 443,
+            protocol: 'https: ',
+            options: [
+                Object
+            ],
+            requests: {
+                
+            },
+            sockets: [
+                Object
+            ],
+            freeSockets: {
+                
+            },
+            keepAliveMsecs: 1000,
+            keepAlive: false,
+            maxSockets: Infinity,
+            maxFreeSockets: 256,
+            maxCachedSessions: 100,
+            _sessionCache: [
+                Object
+            ]
+        },
+        socketPath: undefined,
+        method: 'GET',
+        path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+        parser: null,
+        res: [
+            Circular
+        ]
+    },
+    request: Request{
+        domain: null,
+        _events: {
+            error: [
+                Function: bound
+            ],
+            complete: [
+                Function: bound
+            ],
+            pipe: [
+                Function
+            ],
+            data: [
+                Function
+            ],
+            end: [
+                Function
+            ]
+        },
+        _eventsCount: 5,
+        _maxListeners: undefined,
+        callback: [
+            Function
+        ],
+        readable: true,
+        writable: true,
+        _qs: Querystring{
+            request: [
+                Circular
+            ],
+            lib: [
+                Object
+            ],
+            useQuerystring: undefined,
+            parseOptions: {
+                
+            },
+            stringifyOptions: {
+                
+            }
+        },
+        _auth: Auth{
+            request: [
+                Circular
+            ],
+            hasAuth: false,
+            sentAuth: false,
+            bearerToken: null,
+            user: null,
+            pass: null
+        },
+        _oauth: OAuth{
+            request: [
+                Circular
+            ],
+            params: null
+        },
+        _multipart: Multipart{
+            request: [
+                Circular
+            ],
+            boundary: '8d4833ae-d707-4a85-b8f3-aa4aa523f38d',
+            chunked: false,
+            body: null
+        },
+        _redirect: Redirect{
+            request: [
+                Circular
+            ],
+            followRedirect: true,
+            followRedirects: true,
+            followAllRedirects: false,
+            allowRedirect: [
+                Function
+            ],
+            maxRedirects: 10,
+            redirects: [
+                
+            ],
+            redirectsFollowed: 0,
+            removeRefererHeader: false
+        },
+        _tunnel: Tunnel{
+            request: [
+                Circular
+            ],
+            proxyHeaderWhiteList: [
+                Object
+            ],
+            proxyHeaderExclusiveList: [
+                
+            ]
+        },
+        headers: {
+            accept: 'application/json'
+        },
+        setHeader: [
+            Function
+        ],
+        hasHeader: [
+            Function
+        ],
+        getHeader: [
+            Function
+        ],
+        removeHeader: [
+            Function
+        ],
+        method: 'GET',
+        localAddress: undefined,
+        pool: {
+            
+        },
+        dests: [
+            
+        ],
+        __isRequestRequest: true,
+        _callback: [
+            Function
+        ],
+        uri: Url{
+            protocol: 'https: ',
+            slashes: true,
+            auth: null,
+            host: 'api.weixin.qq.com',
+            port: 443,
+            hostname: 'api.weixin.qq.com',
+            hash: null,
+            search: '?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            query: 'grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            pathname: '/cgi-bin/token',
+            path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            href: 'https: //api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3'
+        },
+        proxy: null,
+        tunnel: true,
+        setHost: true,
+        originalCookieHeader: undefined,
+        _disableCookies: true,
+        _jar: undefined,
+        port: 443,
+        host: 'api.weixin.qq.com',
+        path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+        _json: true,
+        httpModule: {
+            Server: [
+                Object
+            ],
+            createServer: [
+                Function
+            ],
+            globalAgent: [
+                Object
+            ],
+            Agent: [
+                Object
+            ],
+            request: [
+                Function
+            ],
+            get: [
+                Function
+            ]
+        },
+        agentClass: {
+            [
+                Function: Agent
+            ]super_: [
+                Object
+            ]
+        },
+        agent: Agent{
+            domain: null,
+            _events: [
+                Object
+            ],
+            _eventsCount: 1,
+            _maxListeners: undefined,
+            defaultPort: 443,
+            protocol: 'https: ',
+            options: [
+                Object
+            ],
+            requests: {
+                
+            },
+            sockets: [
+                Object
+            ],
+            freeSockets: {
+                
+            },
+            keepAliveMsecs: 1000,
+            keepAlive: false,
+            maxSockets: Infinity,
+            maxFreeSockets: 256,
+            maxCachedSessions: 100,
+            _sessionCache: [
+                Object
+            ]
+        },
+        _started: true,
+        href: 'https: //api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+        req: ClientRequest{
+            domain: null,
+            _events: [
+                Object
+            ],
+            _eventsCount: 4,
+            _maxListeners: undefined,
+            output: [
+                
+            ],
+            outputEncodings: [
+                
+            ],
+            outputCallbacks: [
+                
+            ],
+            outputSize: 0,
+            writable: true,
+            _last: true,
+            chunkedEncoding: false,
+            shouldKeepAlive: false,
+            useChunkedEncodingByDefault: false,
+            sendDate: false,
+            _removedHeader: {
+                
+            },
+            _contentLength: 0,
+            _hasBody: true,
+            _trailer: '',
+            finished: true,
+            _headerSent: true,
+            socket: [
+                Object
+            ],
+            connection: [
+                Object
+            ],
+            _header: 'GET/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3HTTP/1.1\r\nhost: api.weixin.qq.com\r\naccept: application/json\r\nConnection: close\r\n\r\n',
+            _headers: [
+                Object
+            ],
+            _headerNames: [
+                Object
+            ],
+            _onPendingData: null,
+            agent: [
+                Object
+            ],
+            socketPath: undefined,
+            method: 'GET',
+            path: '/cgi-bin/token?grant_type=client_credential&appid=wx17ea2dd41f40de31&secret=8318b4d4511c90f8ba963e0b5a8b74d3',
+            parser: null,
+            res: [
+                Circular
+            ]
+        },
+        ntick: true,
+        response: [
+            Circular
+        ],
+        originalHost: 'api.weixin.qq.com',
+        originalHostHeaderName: 'host',
+        responseContent: [
+            Circular
+        ],
+        _destdata: true,
+        _ended: true,
+        _callbackCalled: true
+    },
+    toJSON: [
+        Function: responseToJSON
+    ],
+    caseless: Caseless{
+        dict: {
+            connection: 'close',
+            'content-type': 'application/json;encoding=utf-8',
+            date: 'Fri,
+            26Aug201606: 33: 20GMT',
+            'content-length': '154'
+        }
+    },
+    read: [
+        Function
+    ],
+    body: {
+        access_token: '-MIFN5jv40D3zHo1gJcVNLfffLA7e1Tfqa4Sdzq9-nuPh3ea_5olzhPCPIzWALEsp7U2I9dmzuKzhNA1jNI4fIHnC11i83Uzo178y5zKvuoNYFiAEASDK',
+        expires_in: 7200
+    }
+}
+</body>
+<script>
+var _Promise = window.Promise
+    var La = function(opts) {
+        // var that = this
+        this.id = opts.id
+        // this.p = this.add(opts.id)
+        // return this.add(opts.id)
+    }
+    La.prototype.add = function(){
+        // var that = this
+        return addOne(this.id).then(function(data){
+            minerOne(data)
+        }).then(function(data){
+            return _Promise.resolve(data)
+        })
+        // return addOne(a)
+    }
+    function addOne(a){
+        return new _Promise(function(resolve,reject){
+            resolve(a+11)
+            console.log('here')
+        })
+    }
+    function minerOne(a){
+        return new _Promise(function(resolve,reject){
+            resolve(a-100)
+            console.log('there')
+        })
+    }
+    var lala = new La({id:1})
+    // lala.then(function(data){
+    //     minerOne(data)
+    // }).then(function(data){
+    //     return data
+    // })
+    var data = yield lala.add()
+    console.log(data)
+</script>
+</html>
