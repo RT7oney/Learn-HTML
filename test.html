@@ -195,7 +195,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -1410,4 +1410,29 @@ var _Promise = window.Promise
     var data = yield lala.add()
     console.log(data)
 </script>
+</html> -->
+
+
+
+<html>
+    <body>
+       <button id="hehe">点击</button> 
+    </body>
+    <script src="jquery.min.js"></script>
+    <script>
+    $("#hehe").click(function(){
+        var test_data = new Array(3)
+        test_data[0] = {"phone":"18801912170"}
+        test_data[1] = {"phone":"123123123"}
+        test_data[2] = {"phone":"6666666"}
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8090/v1/project/list",
+            data:test_data,
+            success: function(){
+                alert("OK");
+            }
+        });
+    })
+    </script>
 </html>
