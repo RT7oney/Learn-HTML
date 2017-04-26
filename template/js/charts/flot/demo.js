@@ -2,10 +2,19 @@ $(function(){
 
   // 
   var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  var d1 = [];
-  for (var i = 0; i <= 11; i += 1) {
-    d1.push([i, parseInt((Math.floor(Math.random() * (1 + 20 - 10))) + 10)]);
-  }
+  var d1 = [
+    [0,1],
+    [1,5],
+    [2,2],
+    [3,6],
+    [4,7],
+    [5,4],
+    [6,3],
+    [7,9]
+  ];
+  // for (var i = 0; i <= 11; i += 1) {
+  //   d1.push([i, parseInt((Math.floor(Math.random() * (1 + 20 - 10))) + 10)]);
+  // }
 
   $("#flot-1ine").length && $.plot($("#flot-1ine"), [{
           data: d1
@@ -43,6 +52,7 @@ $(function(){
         },
         colors: ["#1bb399"],
         xaxis:{
+          ticks:['shanghai','aaa','qweqweqweqw','sasdfasef','asdfase','asdf','wwww']
         },
         yaxis: {
           ticks: 5
