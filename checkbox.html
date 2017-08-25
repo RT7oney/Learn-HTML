@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+	<form id="form" action="">
+		<input name="xxx" type="checkbox"> 测试	
+		<button onclick="test()">提交
+		</button>
+	</form>
+	<script src="jquery.min.js"></script>
+	<script>
+		function test() {
+			console.log("表单",$("#form").serialize());
+			return false;
+		}
+	</script>
+</html>
